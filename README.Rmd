@@ -6,7 +6,7 @@ output: html_document
 ![](logo2.png)
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Simploction Map

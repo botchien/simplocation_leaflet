@@ -53,9 +53,9 @@ tawa_join <- tawa_join %>% mutate(#after_existing_area = b_area / 0.5,  # assume
 # DISTRICT PLAN RULE LOGIC
 ###
 tawa_join <- tawa_join %>%  mutate(check1 = ifelse(dp_zone_mod == "Outer Residential" & new_site_coverage >= 0.5 & new_outside_area > circle_area & new_building_area > 100 & !(is.na(new_area)), 
-                                                  "Subdividable", "Not"))
+                                                  "Subdividable", "Not Subdiviable"))
 # make nas Nots  
-tawa_join <- tawa_join %>% mutate(check1 = ifelse(is.na(check1), "Not", check1))
+tawa_join <- tawa_join %>% mutate(check1 = ifelse(is.na(check1), "Not Subdiviable", check1))
                                                       
  
 ###

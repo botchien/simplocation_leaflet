@@ -5,10 +5,11 @@ output: html_document
 
 ![](logo2.png)
 
-## Simplocation Map
+## Simplocation
 
 Simplification of Data visualisation for land sub-division based on location within New Zealand regions (e.g. Wellington region).
 Shows what is feasible to subdivide based on section area, building footprint, council zoning and district plan rules.
+https://2017.hackerspace.govhack.org/project/simplocation 
 
 ![](map_before.png)
 

@@ -25,7 +25,7 @@ save(wcc_zone, file = "wcc_zone.rda")
 circle_area <- 7^2*pi
 
 # get several rows per id
-tawa_join <- st_join(tawa_par, tawa_bf)
+tawa_join <- st_join(tawa_par %>% filter(parcel_int == "Fee Simple Title"), tawa_bf)
 
 tawa_join$area <- as.numeric(tawa_join$area)
 

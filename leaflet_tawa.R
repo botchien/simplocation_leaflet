@@ -11,7 +11,7 @@ library(sf)
 library(dplyr)
 library(leaflet)
 
-setwd("C:/Maps/Simplocation_leaflet")
+setwd("C:/Maps/Simplocation_leaflet/simplocation_leaflet/")
 
 source("clean.R")
 
@@ -27,8 +27,8 @@ pal <- colorFactor("RdYlBu", domain = wcc_zone$dp_zone_mod)
 pal2 <- colorFactor(c("white", "purple"), domain = tawa_join$check1)
 
 options(viewer = NULL)
-leaflet() %>% 
-    setView(174.827135, -41.167059, zoom = 15)   %>% 
+m = leaflet() %>% 
+    setView(174.827135, -41.167059, zoom = 16)   %>% 
     # BASE map from HERE
     addProviderTiles("HERE.normalDay",
                     options=providerTileOptions(app_id="KMHWlJF1zAusb05MVpux",app_code="_5nxXPBgaTe4PmhmxtD5cg"),
@@ -66,6 +66,9 @@ leaflet() %>%
       options = layersControlOptions(collapsed = FALSE)
     ) %>% 
     hideGroup("feasible")
-    
+
+
+library(htmlwidgets)
+saveWidget(m, file="m_test2.html")
 
   

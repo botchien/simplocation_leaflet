@@ -11,10 +11,11 @@ Simplification of Data visualisation for land sub-division based on location wit
 Shows what is feasible to subdivide based on section area, building footprint, council zoning and district plan rules.
 https://2017.hackerspace.govhack.org/project/simplocation 
 
+##Before Feasibility filter applied
+
 ![](map_before.png)
 
-#------------------------------------------------------------------------------
-Feasiblity filter applied
+##After feasiblity filter applied
 
 ![](map_feasible.png)
 

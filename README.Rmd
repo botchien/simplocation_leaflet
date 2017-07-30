@@ -14,7 +14,11 @@ knitr::opts_chunk$set(echo = FALSE)
 This is a leaflet map for GovHack 2017.
 Shows what is feasible to subdivide based on section area, building footprint, council zoning and district plan rules.
 
-![](map.png)
+![](map_before.png)
+
+Feasiblity filter applied
+
+![](map_feasible.png)
 
 # Datasources:
 

@@ -27,7 +27,7 @@ pal <- colorFactor("RdYlBu", domain = wcc_zone$dp_zone_mod)
 pal2 <- colorFactor(c("white", "purple"), domain = tawa_join$check1)
 
 options(viewer = NULL)
-  leaflet() %>% 
+m =  leaflet() %>% 
     setView(174.827135, -41.167059, zoom = 15)   %>% 
     # BASE map from HERE
     addProviderTiles("HERE.normalDay",

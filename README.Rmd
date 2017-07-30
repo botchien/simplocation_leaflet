@@ -5,17 +5,14 @@ output: html_document
 
 ![](logo2.png)
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+## Simplocation Map
 
-## Simploction Map
-
-This is a leaflet map for GovHack 2017.
+Simplification of Data visualisation for land sub-division based on location within New Zealand regions (e.g. Wellington region).
 Shows what is feasible to subdivide based on section area, building footprint, council zoning and district plan rules.
 
 ![](map_before.png)
 
+#------------------------------------------------------------------------------
 Feasiblity filter applied
 
 ![](map_feasible.png)
@@ -28,3 +25,18 @@ Feasiblity filter applied
 * Wellington City Council (zoning map)
 * Wellington City Council (building footprints)
 * Wellington City council district plan rules
+
+# Background
+THERE IS NO MAGIC BULLET THAT WILL SOLVE THE HOUSING CRISIS.
+
+Housing supply needs to increase so that more people can own a home for the first time.
+
+ 
+
+Simplocation is useful for:
+
+Existing homeowners - people with mortgages;
+Property buyers and developers; and
+Professionals
+
+#------------------------------------------------------------------------------

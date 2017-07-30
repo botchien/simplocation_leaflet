@@ -27,7 +27,7 @@ pal <- colorFactor("RdYlBu", domain = wcc_zone$dp_zone_mod)
 pal2 <- colorFactor(c("white", "purple"), domain = tawa_join$check1)
 
 options(viewer = NULL)
-m =  leaflet() %>% 
+leaflet() %>% 
     setView(174.827135, -41.167059, zoom = 15)   %>% 
     # BASE map from HERE
     addProviderTiles("HERE.normalDay",
@@ -50,7 +50,7 @@ m =  leaflet() %>%
     # LEGEND join
     addLegend(position = "bottomright", 
               colors = pal2(levels(tawa_join$check1)),
-              labels = c("Not", "Subdividable"),
+              labels = c("Not Subdividable", "Subdividable"),
               title = "Feasibility Check",
               opacity = 0.7) %>%
     # linz parcles
